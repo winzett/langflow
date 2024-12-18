@@ -53,13 +53,13 @@ export default function AppHeader(): JSX.Element {
         <Button
           unstyled
           onClick={() => navigate("/")}
-          className="mr-1 flex h-8 w-8 items-center"
+          className="mr-1 flex h-8 w-12 items-center"
           data-testid="icon-ChevronLeft"
         >
           {ENABLE_DATASTAX_LANGFLOW ? (
             <DataStaxLogo className="fill-black dark:fill-[white]" />
           ) : ENABLE_NEW_LOGO ? (
-            <LangflowLogo className="h-5 w-6" />
+            <LangflowLogo className="h-5 w-12" />
           ) : (
             <span className="fill-black text-2xl dark:fill-white">⛓️</span>
           )}
@@ -88,7 +88,7 @@ export default function AppHeader(): JSX.Element {
                 window.open("https://github.com/langflow-ai/langflow", "_blank")
               }
             >
-              <GithubStarComponent />
+              {/* <GithubStarComponent /> */}
             </Button>
           </>
         )}
